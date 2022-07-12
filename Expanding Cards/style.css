@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-:root{
-    --line-border-fill: #3498db;
-    --line-border-empty: #e0e0e0;
-}
 
 *{
     box-sizing: border-box;
 }
 
 body{
-    background-color: #68707a;
+
     font-family: 'Muli', sans-serif;
     display: flex;
     align-items: center;
@@ -21,80 +17,47 @@ body{
 }
 
 .container{
-    text-align: center;
-}
-.progress-container{
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 30px;
-    max-width: 100%;
-    width: 350px;
+    width: 90vw;
 }
 
-.progress-container::before{
-    content: '';
-    background-color: var(--line-border-empty);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 4px;
-    width: 100%;
-    z-index: -1;
-}
-
-
-.progress{
-    background-color: var(--line-border-fill);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 4px;
-    width: 0%;
-    z-index: -1;
-    transform: .4s ease;
-}
-
-.circle{
-    background-color: #fff;
-    color: #999;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid var(--line-border-empty);
-    transition: .4s ease;
-}
-
-.circle.active{
-    border-color: var(--line-border-fill);
-}
-
-.btn{
-    background-color: var(--line-border-fill);
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
     color: #fff;
-    border: 0;
-    border-radius: 6px;
     cursor: pointer;
-    font-family: inherit;
-    padding: 8px 30px;
-    margin: 5px;
-    font-size: 14px;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
 }
 
-.btn:active{
-    transform: scale(.98);
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
 }
 
-.btn:focus{
-    outline: 0;
+.panel.active{
+    flex: 5;
 }
 
-.btn:disabled{
-    background-color: var(--line-border-empty);
-    cursor:not-allowed;
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    }
 }
