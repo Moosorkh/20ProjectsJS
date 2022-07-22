@@ -48,11 +48,11 @@ body{
 .circle button{
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100px;
+    top: 60%;
+    left: 40%;
+    height: 30px;
     background: transparent;
-    border: 3;
+    border: 1;
     font-size: 26px;
     color: #fff;
 }
