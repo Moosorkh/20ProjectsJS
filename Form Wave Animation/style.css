@@ -18,7 +18,6 @@ body{
     height: 100vh;
 }
 
-
 .container{
     background-color: rgba(0,0,0, 0.4);
     padding: 20px 40px;
@@ -36,7 +35,7 @@ body{
 }
 
 .btn{
-    cusrsor: pointer;
+    cursor: pointer;
     display: inline-block;
     width: 100%;
     background: lightblue;
