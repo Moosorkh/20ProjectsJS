@@ -62,7 +62,7 @@ h1{
 
 .faq-text{
     display: none;
-    30px 0 0;
+    margin: 30px 0 0;
 }
 
 .faq.active .faq-text{
