@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+body{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 10vh;
+    background-color: lightblue;
+    font-family: 'Montserrato', sans-serif;
+}
+
+.buttondiv{
+    justify-content: center;
+    margin: 10px;
+}
+
+.large {
+    font-size: small;
+    color: aqua;
+    font-weight: 900;
+}
+button{
+    margin: 3px;
+    border-radius: 10%;
+    height: 30px;
+    background-color: bisque;
+}
+button:hover{
+    background-color: brown;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+}
+
+div{
+    display: flex;
+    height: 20px;
+    margin: 5px;
+}
+
+li{
+    margin: 9px;
+    font-size: 18px;
+    border-style: none;
+    height: fit-content;
+}
+
+li::marker{
+    color: black;
+}
+
+.copied{
+    background-color: rgb(231, 187, 41);
+    width: fit-content;
+    transition: .25s;
+    color: rgb(16, 5, 94);
+    outline: none;
+}
+
+div li:hover{
+    background-color: rgb(15, 95, 40);
+    width: fit-content;
+    transition: .25s;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+textarea{
+    width: 60%;
+    outline: none;
+    background-color: beige;
+}
+textarea:hover{
+    box-shadow: 1px 1px 2px 3px #858282;
+}
+
+#tooltip{
+    visibility: hidden;
+    padding-left: 3px;
+    outline: none;
+    font-size: 12px;
+    height: 20px;
+    width: 115px;
+}
+
+.clicked{
+    background-color: rgb(65, 40, 40);
+    font-size: 12px;
+    color: white;
+    outline: none;
+    visibility: visible;
+    border-radius: 4px;
+    justify-content: center;
+    transition: 1s;
+    opacity: .7;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2px;
+    height: 20px;
+    width: 115px;
+}
