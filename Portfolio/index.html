@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 </head>
 <body class="main-content">
     <!--header-->
@@ -34,7 +36,7 @@
     </header>
     <!--hero-->
     <section class="hero" id="home">
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-in">
             <h4>Hi There!</h4>
             <h1>I am Mehdi Azar</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero ac purus malesuada consectetur. Quisque bibendum,
@@ -54,10 +56,10 @@
     </section>
     <!--About-->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="./Image.jpg" alt="about image">
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-in">
             <h2>I am Product <span>Designer</span><br> & Web Developer</h2>
             <div class="exp-area">
                 <p class="exp">
@@ -90,10 +92,10 @@
     </section>
     <!--Services-->
     <section class="services" id="services">
-    <div class="center-text">
+    <div class="center-text" data-aos = "fade-down">
             <h2>My <span>Services</span></h2>
     </div>
-        <div class="services-content">
+        <div class="services-content" data-aos="zoom-in-up">
             <div class="box">
                 <img src="s-1.svg">
                 <h3>UI/UX Design</h3>
@@ -126,11 +128,11 @@
 
     <!--Portfolio-->
     <section class="portfolio" id="portfolio">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>My <span>Portfolio</span></h2>
         </div>
 
-        <div class="portfolio-content">
+        <div class="portfolio-content" data-aos="zoom-in-up">
             <div class="row">
                 <img src="port-1.jpg" alt="">
                 <div class="main-row">
@@ -213,10 +215,10 @@
 
     <!--contact-->
     <section class="contact" id="contact">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>Contact <span>Me</span></h2>
         </div>
-        <div class="contact-form">
+        <div class="contact-form" data-aos="zoom-in">
             <form action="">
                 <input type="text" placeholder="Your name" required>
                 <input type="email" placeholder="Email Address" required>
@@ -237,5 +239,12 @@
 
     <!--JS links-->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
 </body>
 </html>
